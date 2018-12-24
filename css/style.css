@@ -1,0 +1,43 @@
+/*Header & Nav */
+.header {
+  background: #343a40;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header-title {
+  text-align: center;
+  color: white;
+}
+
+header hr {
+  border: 0;
+  width: 300px;
+  height: 1px;
+  background-color: white;
+}
+
+/*Into and banner image */
+.intro {
+  margin: auto;
+  margin-top: 15px;
+  background-image: url('../imgs/bg.jpg');
+  background-size: cover;
+  text-shadow: black 0.3em 0.3em 0.3em;
+  width: 780px;
+
+}
+
+.jumbotron {
+  height: 270px;
+  text-shadow: black 0.3em 0.3em 0.3em;
+  background: transparent;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.ban {
+  margin: auto;
+  width: 65%;
+}
