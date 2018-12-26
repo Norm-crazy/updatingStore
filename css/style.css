@@ -23,21 +23,24 @@ header hr {
   margin-top: 15px;
   background-image: url('../imgs/bg.jpg');
   background-size: cover;
-  text-shadow: black 0.3em 0.3em 0.3em;
-  width: 780px;
+  max-width: 780px;
 
 }
 
 .jumbotron {
-  height: 270px;
-  text-shadow: black 0.3em 0.3em 0.3em;
+  width: 100%;
   background: transparent;
   background: rgba(0, 0, 0, 0.4);
   color: #fff;
   font-family: 'Roboto', sans-serif;
 }
 
-.ban {
-  margin: auto;
-  width: 65%;
+.display-4, .lead {
+  text-shadow: black 0.3em 0.3em 0.3em;
+}
+
+/* Model for intro*/
+#info {
+  color: black;
+
 }
