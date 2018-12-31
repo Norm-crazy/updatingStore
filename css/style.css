@@ -40,7 +40,197 @@ header hr {
 }
 
 /* Model for intro*/
+.modal-content {
+  border: 1px solid black;
+  background-color: black;
+}
+
+.modal-header, .modal-footer {
+  background-color: #343a40;
+  border: black;
+  color: white;
+}
+
+.modal-body {
+  background-color: white;
+}
+
+#infoBtn {
+  position: absolute;
+  margin-left: 242px;
+  background-color: black;
+  border-color: #1e7e34;
+  color: white;
+}
+
+#close-modal {
+  color: #f8f9fa;
+}
+
 #info {
   color: black;
 
+}
+
+/*Games*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(258px, 1fr));
+  margin-left: 100px;
+}
+
+a:link, a:focus, a:hover, a:active, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/*PlayStation*/
+
+.psarea {
+  background-repeat: no-repeat;
+  background-image: radial-gradient(ellipse 50% 70% at 50% 0,#307af5 20%,#011940);
+  height: 100%;
+  padding: 15px;
+  padding-bottom: 30px;
+  box-shadow: 5px 0px 15px 0px #000000;
+}
+
+.ps-banner {
+  background-color: rgba(0,0,0,.7);
+  width: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.ps-logo {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+.psgame p {
+  color: white;
+}
+
+.psgame:link {
+ color: white;
+}
+
+.psgame {
+  position: relative;
+    width: 10.75rem;
+    height: 17.5rem;
+    background-color: #262b34;
+    display: block;
+    color: #fefefe;
+    transition: all .5s ease;
+    text-decoration: none;
+    font-family: "Open Sans",Helvetica,Roboto,Arial,sans-serif;
+    font-weight: 400;
+    margin-top: 14px;
+    text-align: center;
+}
+
+.psgame:hover {
+  outline: white solid 4px;
+}
+
+.ps-btn {
+  height: 2rem;
+  border: none;
+  background-color: #d6d6d6;
+  font-family: "Open Sans",Helvetica,Roboto,Arial,sans-serif;
+  font-weight: 400;
+  color: #373737;
+  line-height: 1.25rem;
+  width: 80%;
+}
+/*Xbox*/
+.xboxArea {
+  box-shadow: 5px 0px 15px 0px #000000;
+  background: linear-gradient(#3a3a3a,#c2c2c2);
+  margin-top: 15px;
+  padding: 15px;
+}
+
+.xboxArea h5, p {
+
+}
+
+.xbox-banner {
+  display: block;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.xbox-logo {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.xboxgame {
+  position: relative;
+  text-align: center;
+  width: 10.75rem;
+  background-color: #fff;
+  display: block;
+  color: black;
+  transition: all .5s ease;
+  text-decoration: none;
+  font-family: "Open Sans",Helvetica,Roboto,Arial,sans-serif;
+  font-weight: 400;
+  margin-top: 14px;
+}
+
+.xboxgame:hover {
+  outline: 2px dashed #000;
+}
+
+.xboxgame:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.box-btn {
+  height: 2rem;
+  border: none;
+  margin-bottom: 15px;
+  background: lightgrey;
+  font-family: "Open Sans",Helvetica,Roboto,Arial,sans-serif;
+  font-weight: 400;
+  color: #373737;
+  line-height: 1.25rem;
+  width: 80%;
+}
+
+.gears .box-btn, .rising .box-btn {
+  margin-top: -1.5px;;
+}
+
+.gears p, .rising p {
+  margin-top: 35px;
+}
+
+.box-btn:hover {
+  text-decoration: none;
+  background-color: #c4c4c4 !important;
+}
+
+/*Footer*/
+.goback {
+  color: white;
+  border-radius: 50%;
+  background: blue;
+  margin: 18px 29px;
+}
+
+footer {
+  background-color: #343a40;
+  height: 100%;
+  color: white;
+  padding: 10px;
 }

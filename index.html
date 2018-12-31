@@ -12,7 +12,8 @@
 </head>
 
 <body>
-  <header class="header">
+<!-- Nav -->
+  <header class="header" id="top">
     <h3 class="header-title">Demo store for games</h3>
     <hr>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -25,8 +26,8 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Consoles</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">PlayStation</a>
-              <a class="dropdown-item" href="#">Xbox</a>
+              <a class="dropdown-item" href="#ps">PlayStation</a>
+              <a class="dropdown-item" href="#box">Xbox</a>
             </div>
           </li>
         </ul>
@@ -38,26 +39,26 @@
       </div>
     </nav>
   </header>
+<!-- Modal stares & info -->
   <div class="intro">
     <div class="jumbotron">
       <h1 class="display-4">Welcome to my store.</h1>
       <p class="lead">Thank you for visiting my new demo store. I first started this site a little over a year ago and decided to redo the site. I hope you enjoy this newly created site.</p>
       <hr class="my-4">
-<!-- Modal stares for info -->
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#info">
-        Learn more here.
+      <button type="button" class="btn btn-primary" id="infoBtn" data-toggle="modal" data-target="#info">
+        Learn more.
       </button>
       <div class="modal fade" id="info" tabindex="-1" role="dialog" aria-labelledby="infoCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="infoLongTitle">Modal title</h5>
+              <h5 class="modal-title" id="infoLongTitle">Welcome</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+                <span id="close-modal" aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              <p>This page was created to show a demo store for selling video games. The games are some of my favorite games on Xbox and PlayStation. </p>
+              <p>This page was created to show a demo store for selling video games. The games are some of my favorite games on Xbox and PlayStation.<p>None of the games I am selling, this is only for demonstration. I am using FireBase as the database to collect order details. The database is collecting the following: ordered items, quantity, tax, total cost, name, and email.</p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -65,10 +66,90 @@
           </div>
         </div>
       </div>
-
-
     </div>
   </div>
+<!--Games -->
+  <div class="container" id="games">
+<!--PlayStation-->
+    <div class="psarea">
+      <div class="ps-banner" id="ps">
+        <img class="ps-logo" src="imgs/store/pslogo1.png" alt="PS Logo">
+      </div>
+      <div class="grid">
+        <!--Final Fantasy 8-->
+        <div class="ff8">
+          <a href="#" class="psgame">
+            <img class="img-fluid" src="imgs/store/Final-Fantasy-8.jpg" alt="FF8 thumbnail">
+            <h5>Final Fantasy 8</h5>
+            <p>Price</p>
+            <button class="ps-btn" type="button" name="button">Add to cart</button>
+          </a>
+        </div>
+        <!-- Metal Gear Solid 1 -->
+        <a href="#" class="psgame">
+          <img class="img-fluid" src="imgs\store\metal-gear-solid-game.png" alt="MGS1 thumbnail">
+          <h5>Metal Gear Solid</h5>
+          <p>Price</p>
+          <button class="ps-btn" type="button" name="button">Add to cart</button>
+        </a>
+        <!-- Metal gear solid 4-->
+        <a href="#" class="psgame">
+          <img class="img-fluid" src="imgs\store\MGS4.jpg" alt="MSG4 thumbnail">
+          <h5>Metal Gear Solid 4</h5>
+          <p>Price</p>
+          <button class="ps-btn" type="button" name="button">Add to cart</button>
+        </a>
+      </div>
+    </div>
+<!--Xbox area -->
+    <div class="xboxArea">
+      <div class="xbox-banner" id="box">
+        <img class="xbox-logo" src="imgs\store\xbox-store-logo.png" alt="xbox logo">
+      </div>
+      <div class="grid">
+        <!--Halo -->
+        <div class="halo">
+          <a href="#" class="xboxgame">
+            <img class="img-fluid" src="imgs/store/Final-Fantasy-8.jpg" alt="FF8 thumbnail">
+            <h5>Halo: Combat Evolved</h5>
+            <p>Price</p>
+            <button class="box-btn" type="button" name="button">Add to cart</button>
+          </a>
+        </div>
+        <!--Gears of War -->
+        <div class="gears">
+          <a href="#" class="xboxgame">
+            <img class="img-fluid" src="imgs/store/Final-Fantasy-8.jpg" alt="FF8 thumbnail">
+            <h5>Gears of War</h5>
+            <p>Price</p>
+            <button class="box-btn" type="button" name="button">Add to cart</button>
+          </a>
+        </div>
+        <!--Dead Rising 3 -->
+        <div class="rising">
+          <a href="#" class="xboxgame">
+            <img class="img-fluid" src="imgs/store/Final-Fantasy-8.jpg" alt="FF8 thumbnail">
+            <h5>Dead Rising 3</h5>
+            <p>Price</p>
+            <button class="box-btn" type="button" name="button">Add to cart</button>
+          </a>
+        </div>
+      </div>
+    </div>
+<!--end of xbox-->
+  </div>
+<!--end of games -->
+  <div>
+    <a href="#top">
+      <i class="material-icons goback">expand_less</i>
+    </a>
+  </div>
+  <footer>
+    <p>Thank you for visiting my site.</p>
+  </footer>
+
+
+
   <script type="text/javascript" src="script.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
