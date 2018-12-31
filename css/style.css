@@ -29,6 +29,7 @@ header hr {
 
 .jumbotron {
   width: 100%;
+  text-align: center;
   background: transparent;
   background: rgba(0, 0, 0, 0.4);
   color: #fff;
@@ -56,8 +57,8 @@ header hr {
 }
 
 #infoBtn {
-  position: absolute;
-  margin-left: 242px;
+  display: block;
+  margin: auto;
   background-color: black;
   border-color: #1e7e34;
   color: white;
@@ -112,6 +113,12 @@ a:link, a:focus, a:hover, a:active, a:visited {
 .psgame p {
   color: white;
 }
+
+.psgame:nth-child(3) img {
+  height: 160px;
+  width: 172px;
+}
+
 
 .psgame:link {
  color: white;
