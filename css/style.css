@@ -161,10 +161,6 @@ a:link, a:focus, a:hover, a:active, a:visited {
   padding: 15px;
 }
 
-.xboxArea h5, p {
-
-}
-
 .xbox-banner {
   display: block;
   width: 50%;
@@ -192,6 +188,10 @@ a:link, a:focus, a:hover, a:active, a:visited {
   font-weight: 400;
   margin-top: 14px;
 }
+#risingImg, #gearImg {
+  width: 172px;
+  height: 246px;
+}
 
 .xboxgame:hover {
   outline: 2px dashed #000;
@@ -212,10 +212,6 @@ a:link, a:focus, a:hover, a:active, a:visited {
   color: #373737;
   line-height: 1.25rem;
   width: 80%;
-}
-
-.gears .box-btn, .rising .box-btn {
-  margin-top: -1.5px;;
 }
 
 .gears p, .rising p {
@@ -240,4 +236,9 @@ footer {
   height: 100%;
   color: white;
   padding: 10px;
+  text-align: center;
+}
+
+#portfolio {
+  text-decoration: underline white;
 }
