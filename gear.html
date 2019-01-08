@@ -7,12 +7,12 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/ps.css">
+  <link rel="stylesheet" type="text/css" href="css/xbox.css">
   <link rel="stylesheet" type="text/css" href="css/games.css">
-  <title>Final Fantasy 8</title>
+  <title>Gears of War</title>
 </head>
 
-<body class="ff8">
+<body>
   <header class="header" id="top">
     <h3 class="header-title">Demo store for games</h3>
     <hr>
@@ -41,28 +41,28 @@
   </header>
   <!--Game Details and sites-->
   <div class="container-fluid">
-    <h2 class="title">Final Fantasy 8</h2>
+    <h2 class="title" id="gearTitle">GEARS OF WAR</h2>
     <div class="row">
       <div class="col colImg">
         <!--Slide for images -->
         <div class="slideShow">
           <div class="w3-content" style="max-width:1200px">
-            <img class="mySlides" src="imgs\store\details\FF8\slidemain.jpg" style="width:100%">
-            <img class="mySlides" src="imgs\store\details\FF8\slide.png" style="width:100%; display:none">
-            <img class="mySlides" src="imgs\store\details\FF8\slide1.jpg" style="width:100%;display:none">
-            <img class="mySlides" src="imgs\store\details\FF8\slide2.jpg" style="width:100%;display:none">
+            <img class="mySlides" src="imgs\store\details\gears\gowMain.jpg" style="width:100%">
+            <img class="mySlides" src="imgs\store\details\gears\gow1.jpg" style="width:100%; display:none">
+            <img class="mySlides" src="imgs\store\details\gears\gow2.jpg" style="width:100%;display:none">
+            <img class="mySlides" src="imgs\store\details\gears\gow3.jpg" style="width:100%;display:none">
             <div class="w3-row-padding w3-section">
               <div class="w3-col s3">
-                <img class="demo w3-opacity w3-hover-opacity-off" id="slideimg" src="imgs\store\details\FF8\slidemain.jpg" onclick="currentDiv(1)">
+                <img class="demo w3-opacity w3-hover-opacity-off" id="slideimg" src="imgs\store\details\gears\gowMain.jpg" onclick="currentDiv(1)">
               </div>
               <div class="w3-col s3">
-                <img class="demo w3-opacity w3-hover-opacity-off" id="slideimg" src="imgs\store\details\FF8\slide.png" onclick="currentDiv(2)">
+                <img class="demo w3-opacity w3-hover-opacity-off" id="slideimg" src="imgs\store\details\gears\gow1.jpg" onclick="currentDiv(2)">
               </div>
               <div class="w3-col s3">
-                <img class="demo w3-opacity w3-hover-opacity-off" id="slideimg" src="imgs\store\details\FF8\slide1.jpg" onclick="currentDiv(3)">
+                <img class="demo w3-opacity w3-hover-opacity-off" id="slideimg" src="imgs\store\details\gears\gow2.jpg" onclick="currentDiv(3)">
               </div>
               <div class="w3-col s3">
-                <img class="demo w3-opacity w3-hover-opacity-off" id="slideimg" src="imgs\store\details\FF8\slide2.jpg" onclick="currentDiv(4)">
+                <img class="demo w3-opacity w3-hover-opacity-off" id="slideimg" src="imgs\store\details\gears\gow3.jpg" onclick="currentDiv(4)">
               </div>
             </div>
           </div>
@@ -70,12 +70,11 @@
         <!--Game info-->
       </div>
       <div class="col-6 colText">
-        <p>Final Fantasy VIII is a role-playing video game developed and published by Square for the PlayStation console. Released in 1999, it is the eighth main installment in the Final Fantasy series. <p>During a time of war, Galbadia a Global
-            Superpower has declared war on the country of Dollet. Squall, a member of Balamb Garden's mercenary force SeeD, together with his friends and Rinoa, a member of a resistance group, are shipped off to war, unaware that the military nation
-            of Galbadia has allied with a Sorceress for world domination.<p>Final Fantasy VIII uses a turn-based battle system, between the playable characters and CPU-controlled enemies. Final Fantasy VIII has 6 playable characters, Squall
-              Leonhart, Rinoa Heartilly, Quistis Trepe, Zell Dincht, Selphie Tilmitt, and Irvine Kinneas. The summoning-creatures in Final Fantasy VIII are called Guardian Force (GF), assigning a GF to playable characters will allow that character
-              the ability to summon that GF.
-            </p>
+        <p>Gears of War is a video game franchise created by Epic Games, and owned and published by Microsoft Studios. The first installment, titled Gears of War, was released on November 7, 2006, for the Xbox 360. </p>
+        <p>Players follow the protagonist Marcus Fenix, a soldier in the Coalition of Ordered Governments tasked to lead a last-ditch effort to destroy the Locust Horde and save humanity. Gears of War is set 14 years after the Locust emerged and
+          attacked Sera's human population. Marcus seeks personal redemption as he leads his fire team against an onslaught of merciless warrior fiends.</p>
+        <p>In this third-person tactical action/horror game, gamers immerse themselves in an experience so intensely emotional and gut-wrenching that playing will be like controlling a blockbuster action movie. Players can play Co-op Campaign, play
+          as Marcus Fenix, or recruit a friend to play Dominic Santiago and complete campaign mode cooperatively – online or off. </p>
       </div>
       <!--Cart-->
       <div class="col">
@@ -90,10 +89,11 @@
         </div>
         <div class="links">
           <p id="mainSite">Visit the official site here:
-            <a href="https://ffviiipc.square-enix-games.com/us">Final Fantasy 8</a>
+            <a id="gowlink" href="https://gearsofwar.com/en-us/games/gears-of-war/xbox-360"><img id="gearsLogo" src="imgs\store\gearslogo.png"></a>
           </p>
-          <p class="steam">Purchase on Steam:<a href="https://store.steampowered.com/app/39150/FINAL_FANTASY_VIII/"><img class="steamImg" src="imgs\store\steam.png"></a></p>
-          <p>Purchase on PlayStation Store for PS3:<a href="https://store.playstation.com/en-us/product/UP9000-NPUJ00892_00-0000000000000001"><img class="psStore" src="imgs\store\playstation-store.png"></a></p>
+          <p class="xboxMart">Purchase on Xbox Marketplace: <a href="https://marketplace.xbox.com/en-US/product/Gears-of-War/66acd000-77fe-1000-9115-d8024d5307d5"><img class="xboxImg" src="imgs\store\xbox-store-logo.png"></a></p>
+          <p>OR</p>
+          <p>Can get the remastered edition: Gears of War: Ultimate Edition -<a href="https://www.microsoft.com/en-us/p/gears-of-war-ultimate-edition/bqt21vxfs52f?activetab=pivot:overviewtab"><img class="oneImg" src="imgs\store\onestore.png"></a></p>
         </div>
       </div>
     </div>

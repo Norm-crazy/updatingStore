@@ -1,0 +1,30 @@
+/*This CSS sheet is for all games that require specific styling.*/
+/*Some pages use different font families that are close to the fonts used in the games.  */
+/*FINAL FANTASY 8*/
+.ff8 {
+  font-family: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+}
+
+/*Metal Gear Solid 1 */
+.mgsnotonline {
+  width: 300px;
+}
+
+/* Halo */
+#haloLogo {
+  width: 100px;
+}
+
+/*Gears of War*/
+#gearTitle {
+  font-family: Arial, "Trebuchet MS", Tahoma, Arial, sans-serif;
+}
+
+#gearsLogo {
+  width: 120px;
+}
+
+/*Dead Rising 3*/
+#dr3logo {
+  width: 120px;
+}

@@ -24,7 +24,6 @@ header hr {
   background-image: url('../imgs/bg.jpg');
   background-size: cover;
   max-width: 780px;
-
 }
 
 .jumbotron {
@@ -70,7 +69,6 @@ header hr {
 
 #info {
   color: black;
-
 }
 
 /*Games*/
@@ -85,12 +83,10 @@ a:link, a:focus, a:hover, a:active, a:visited {
   color: inherit;
 }
 
-
 /*PlayStation*/
-
 .psarea {
   background-repeat: no-repeat;
-  background-image: radial-gradient(ellipse 50% 70% at 50% 0,#307af5 20%,#011940);
+  background-image: radial-gradient(ellipse 50% 70% at 50% 0, #307af5 20%, #011940);
   height: 100%;
   padding: 15px;
   padding-bottom: 30px;
@@ -98,7 +94,7 @@ a:link, a:focus, a:hover, a:active, a:visited {
 }
 
 .ps-banner {
-  background-color: rgba(0,0,0,.7);
+  background-color: rgba(0, 0, 0, .7);
   width: 50%;
   margin: auto;
   margin-bottom: 20px;
@@ -119,24 +115,23 @@ a:link, a:focus, a:hover, a:active, a:visited {
   width: 172px;
 }
 
-
 .psgame:link {
- color: white;
+  color: white;
 }
 
 .psgame {
   position: relative;
-    width: 10.75rem;
-    height: 17.5rem;
-    background-color: #262b34;
-    display: block;
-    color: #fefefe;
-    transition: all .5s ease;
-    text-decoration: none;
-    font-family: "Open Sans",Helvetica,Roboto,Arial,sans-serif;
-    font-weight: 400;
-    margin-top: 14px;
-    text-align: center;
+  width: 10.75rem;
+  height: 17.5rem;
+  background-color: #262b34;
+  display: block;
+  color: #fefefe;
+  transition: all .5s ease;
+  text-decoration: none;
+  font-family: "Open Sans", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 400;
+  margin-top: 14px;
+  text-align: center;
 }
 
 .psgame:hover {
@@ -147,16 +142,17 @@ a:link, a:focus, a:hover, a:active, a:visited {
   height: 2rem;
   border: none;
   background-color: #d6d6d6;
-  font-family: "Open Sans",Helvetica,Roboto,Arial,sans-serif;
+  font-family: "Open Sans", Helvetica, Roboto, Arial, sans-serif;
   font-weight: 400;
   color: #373737;
   line-height: 1.25rem;
   width: 80%;
 }
+
 /*Xbox*/
 .xboxArea {
   box-shadow: 5px 0px 15px 0px #000000;
-  background: linear-gradient(#3a3a3a,#c2c2c2);
+  background: linear-gradient(#3a3a3a, #c2c2c2);
   margin-top: 15px;
   padding: 15px;
 }
@@ -184,10 +180,11 @@ a:link, a:focus, a:hover, a:active, a:visited {
   color: black;
   transition: all .5s ease;
   text-decoration: none;
-  font-family: "Open Sans",Helvetica,Roboto,Arial,sans-serif;
+  font-family: "Open Sans", Helvetica, Roboto, Arial, sans-serif;
   font-weight: 400;
   margin-top: 14px;
 }
+
 #risingImg, #gearImg {
   width: 172px;
   height: 246px;
@@ -207,7 +204,7 @@ a:link, a:focus, a:hover, a:active, a:visited {
   border: none;
   margin-bottom: 15px;
   background: lightgrey;
-  font-family: "Open Sans",Helvetica,Roboto,Arial,sans-serif;
+  font-family: "Open Sans", Helvetica, Roboto, Arial, sans-serif;
   font-weight: 400;
   color: #373737;
   line-height: 1.25rem;

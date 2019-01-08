@@ -1,0 +1,208 @@
+/*General CSS for all PlayStation game pages*/
+body {
+  font-size: 15px;
+  font-family: wf_heroic-condensed-pro_medium, Calibri, "Arial Narrow", "Trebuchet MS", Tahoma, Arial, sans-serif;
+  color: #000;
+  background-color: #fff;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+/*Header & Nav */
+.header {
+  background: #343a40;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header-title {
+  text-align: center;
+  color: white;
+}
+
+header hr {
+  border: 0;
+  width: 300px;
+  height: 1px;
+  background-color: white;
+}
+
+/*Game details*/
+.container-fluid {
+  width: 95%;
+  flex: 1;
+  margin-top: 15px;
+  padding: 20px;
+  border-radius: 2px;
+  background: #fff;
+  -ms-grid-columns: auto minmax(0, 1fr);
+  -ms-grid-rows: auto auto auto auto 1fr auto;
+  grid-template-columns: min-content minmax(0, 1fr);
+  grid-template-rows: auto auto auto auto 1fr auto;
+  -webkit-box-shadow: 0 6px 23px 0 rgba(0, 0, 0, .16);
+  -moz-box-shadow: 0 6px 23px 0 rgba(0, 0, 0, .16);
+  box-shadow: 0 6px 23px 0 #212529;
+}
+
+.title {
+  font-family: wf_heroic-condensed-pro_medium, Calibri, "Arial Narrow", "Trebuchet MS", Tahoma, Arial, sans-serif;
+  padding: 0.8rem 0 1.1rem;
+  letter-spacing: .4em;
+  text-align: center;
+}
+
+/* SlideShow*/
+.slideShow {
+  height: 350px;
+}
+
+.slideShow img {
+  width: 400px;
+  height: 250px;
+}
+
+#slideimg {
+  Width: 100%;
+  cursor: pointer;
+  height: 50px;
+}
+
+.w3-content, .w3-auto {
+  margin-left: auto;
+  margin-right: auto
+}
+
+.w3-content {
+  max-width: 980px;
+}
+
+.w3-auto {
+  max-width: 1140px
+}
+
+.w3-section, .w3-code {
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
+}
+
+.w3-row-padding, .w3-row-padding>.w3-half, .w3-row-padding>.w3-third, .w3-row-padding>.w3-twothird, .w3-row-padding>.w3-threequarter, .w3-row-padding>.w3-quarter, .w3-row-padding>.w3-col {
+  padding: 0 8px;
+}
+
+.w3-col.s3 {
+  width: 24.99999%;
+}
+
+.w3-col, .w3-half, .w3-third, .w3-twothird, .w3-threequarter, .w3-quarter {
+  float: left;
+  width: 100%;
+}
+
+/* Cart Price and Sites*/
+.colbtn {
+  background-color: #fff;
+  padding: 10px 10px;
+  border: 1px solid black;
+  width: 95%;
+}
+
+.cartArea {
+  padding: 05px;
+  margin: 0 5px;
+}
+
+.cartArea h5 {
+  text-align: center;
+}
+
+.qty-box {
+  margin-left: 15%;
+}
+
+.qty-box-input {
+  width: 55px;
+}
+
+.cartbtn {
+  padding: .625rem 1.25rem;
+  margin: .3125rem 0 .75rem;
+  border: none;
+  font-size: 15px;
+  border-radius: .125rem;
+  font-size: 1.125rem;
+  cursor: pointer;
+  line-height: 1.25rem;
+  border: 2px solid transparent;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0;
+  box-shadow: 0 4px 8px 0 transparent;
+  background: #107c10;
+}
+
+.cartbtn:hover {
+  text-decoration: underline;
+}
+
+#mainSite {
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+}
+
+#mainSite a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.xboxImg {
+  width: 100px;
+}
+
+.links p:nth-child(3) {
+  color: #107c10;
+  font-size: 25px;
+  text-align: center;
+}
+
+.oneImg {
+  width: 110px;
+}
+
+.steam {
+  font-family: "Motiva Sans", Sans-serif
+}
+
+.steamImg {
+  width: 115px;
+}
+
+/*Go to Top and footer*/
+.goback {
+  color: white;
+  border-radius: 50%;
+  background: blue;
+  margin: 18px 29px;
+}
+
+footer {
+  background-color: #343a40;
+  height: 100%;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+footer a {
+  color: inherit;
+}
+
+#portfolio {
+  text-decoration: underline white;
+}
