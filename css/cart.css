@@ -1,0 +1,81 @@
+body {
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background: -webkit-linear-gradient(45deg, #307af5 0%,#3a3a3a 50%,#011940 50%,#011940 50%,#3a3a3a 50%,#c2c2c2 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #307af5 0%,#3a3a3a 50%,#011940 50%,#011940 50%,#3a3a3a 50%,#c2c2c2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+html {
+  height: 100%;
+}
+
+/*Header & Nav */
+.header {
+  background: #343a40;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header-title {
+  text-align: center;
+  color: white;
+}
+
+header hr {
+  border: 0;
+  width: 300px;
+  height: 1px;
+  background-color: white;
+}
+
+/* content */
+.container-fluid {
+  flex: 1;
+}
+
+.carDetails {
+  height: 150px;
+  width: 75%;
+  margin: auto;
+  margin-top: 100px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer*/
+.goback {
+  color: white;
+  border-radius: 50%;
+  background: blue;
+  margin: 18px 29px;
+}
+
+footer {
+  background-color: #343a40;
+  height: 100%;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+footer a {
+  color: inherit;
+}
+
+#portfolio {
+  text-decoration: underline white;
+}
