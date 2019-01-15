@@ -41,12 +41,6 @@ header hr {
   background: rgba(0, 0, 0, .6);
 }
 
-.title {
-  padding: 0.8rem 0 1.1rem;
-  font-weight: 200;
-  letter-spacing: .4em;
-  text-align: center;
-}
 
 /* SlideShow*/
 .slideShow {

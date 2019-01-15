@@ -84,6 +84,8 @@ a:link, a:focus, a:hover, a:active, a:visited {
   color: inherit;
 }
 
+
+
 /*PlayStation*/
 .psarea {
   background-repeat: no-repeat;
@@ -111,13 +113,8 @@ a:link, a:focus, a:hover, a:active, a:visited {
   color: white;
 }
 
-.psgame:nth-child(3) img {
-  height: 160px;
-  width: 172px;
-}
-
-.psgame:link {
-  color: white;
+input:focus {
+    outline:none;
 }
 
 .psgame {
@@ -135,7 +132,7 @@ a:link, a:focus, a:hover, a:active, a:visited {
   text-align: center;
 }
 
-.psgame:hover {
+.psModal:hover {
   outline: white solid 4px;
 }
 

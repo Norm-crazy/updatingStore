@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/cart.css">
   <link rel="stylesheet" type="text/css" href="css/media.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <title>Game Demo Store</title>
 </head>
 
@@ -27,14 +28,14 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Consoles</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#ps">PlayStation</a>
-              <a class="dropdown-item" href="#box">Xbox</a>
+              <a class="dropdown-item" href="index.html#ps">PlayStation</a>
+              <a class="dropdown-item" href="index.html#box">Xbox</a>
             </div>
           </li>
         </ul>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="cart.html"><i class="material-icons">shopping_cart</i> Shopping Cart</a>
+            <a class="nav-link" href="cart.html"><i class="material-icons">shopping_cart</i><span id="cartNum"> 0</span> Items in Shopping Cart</a>
           </li>
         </ul>
       </div>
@@ -44,7 +45,30 @@
   <div class="container-fluid">
     <div class="carDetails">
       <div class="cartHeader">
-        <h5><span>number</span> Item(s) in your shopping cart: <span>subTotal</span></h5>
+        <h3>Shopping Cart</h3>
+      </div>
+
+      
+      <div class="cartBody">
+        <div class="row">
+          <div class="col cart-body">
+						<span class="cart-heading">Items:</span>
+						<br>
+						<p class="cart-items" id="cart-input-item-ff8"></p>
+						<p class="cart-items" id="cart-input-item-mgs"></p>
+						<p class="cart-items" id="cart-input-item-mgs4"></p>
+						<p class="cart-items" id="cart-input-item-halo"></p>
+						<p class="cart-items" id="cart-input-item-gow"></p>
+						<p class="cart-items" id="cart-input-item-dr3"></p>
+          </div>
+          <div class="col cartPrice">
+            <span class="cart-heading" id="cart-sub">Subtotal:</span><span id="cart-input-sub"></span>
+						<br>
+						<span class="cart-heading" id="cart-tax">Tax:</span><span id="cart-input-tax"></span>
+						<br>
+						<span class="cart-heading" id="cart-total">Total:</span><span id="cart-input-total"></span>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -69,8 +93,7 @@
 
 
 
-  <script type="text/javascript" src="script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="script/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>

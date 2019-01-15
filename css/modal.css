@@ -1,0 +1,132 @@
+#pscontent {
+    background-color: #002055;
+    background-image: radial-gradient(ellipse 50% 70% at 50% 0, #002c74 20%, #001536);
+}
+
+#psFooter {
+height: 50px;
+}
+
+#ps-Modal-header, #psFooter{
+  background-color: rgba(0,0,0,.3);
+}
+
+#psFooter button {
+  background-color: black;
+}
+
+.container-fluid{
+  color: white;
+flex: 1;
+width: 95%;
+padding-top: 25px;
+background: rgba(0, 0, 0, .6);
+}
+
+#psModal{
+  background-color: #002055;
+  background-image: radial-gradient(ellipse 50% 70% at 50% 0, #002c74 20%, #001536);
+  padding: inherit;
+}
+#mgsthumbnail {
+  height: 160px;
+}
+/*Modal for games*/
+#psTitle {
+  padding: 0.8rem 0 1.1rem;
+  font-weight: 200;
+  letter-spacing: .4em;
+  margin: auto;
+}
+
+/* SlideShow*/
+.carousel-indicators li {
+  border: 1px solid black;
+  height: 5px;
+}
+
+.carousel-indicators .active {
+    background-color: #000000;
+}
+
+.carousel-control-prev, .carousel-control-next {
+   background-color: inherit;
+}
+
+
+/*Game Details*/
+.psDetails{
+  padding: 15px;
+}
+
+
+
+/* Cart Price and Sites*/
+.colbtn {
+  background-color: #262b34;
+  padding: 10px 10px;
+  border: 1px solid white;
+  width: 95%;
+}
+
+.cartArea {
+  padding: 05px;
+  margin: 0 5px;
+}
+
+.cartArea h5 {
+  text-align: center;
+}
+
+.qty-box {
+  margin-left: 15%;
+}
+
+.qty-box-input {
+  width: 55px;
+}
+
+.cartbtn {
+  padding: .625rem 1.25rem;
+  margin: .3125rem 0 .75rem;
+  border: none;
+  border-radius: .125rem;
+  font-size: 1.125rem;
+  background-color: #d6d6d6;
+  color: #373737;
+  cursor: pointer;
+  line-height: 1.25rem;
+}
+
+.cartbtn:hover {
+  background-color: #dfdfdf;
+}
+
+#mainSite {
+  font-weight: 200;
+  letter-spacing: .1em;
+  text-decoration: none;
+  color: white;
+  padding-top: 15px;
+}
+
+#mainSite a {
+  color: inherit;
+}
+
+.steam {
+  font-family: "Motiva Sans", Sans-serif
+}
+
+.steamImg {
+  width: 125px;
+}
+
+.psStore {
+  width: 175px;
+}
+
+/*MGS Img*/
+.mgsnotonline {
+  width: 100%;
+}

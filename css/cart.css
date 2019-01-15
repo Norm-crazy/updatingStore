@@ -3,8 +3,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  background: -webkit-linear-gradient(45deg, #307af5 0%,#3a3a3a 50%,#011940 50%,#011940 50%,#3a3a3a 50%,#c2c2c2 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg, #307af5 0%,#3a3a3a 50%,#011940 50%,#011940 50%,#3a3a3a 50%,#c2c2c2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -webkit-linear-gradient(45deg, #307af5 0%,#3a3a3a 50%,#011940 50%,#011940 50%,#3a3a3a 50%,#c2c2c2 100%);
+  background: linear-gradient(45deg, #307af5 0%,#3a3a3a 50%,#011940 50%,#011940 50%,#3a3a3a 50%,#c2c2c2 100%);
 }
 
 html {
@@ -44,7 +44,10 @@ header hr {
   background-color: white;
 }
 
-
+.cartHeader {
+  text-align: center;
+  border-bottom: 1px solid black;
+}
 
 
 
