@@ -30,7 +30,9 @@ background: rgba(0, 0, 0, .6);
 }
 #mgsthumbnail {
   height: 160px;
+  width: 172px;
 }
+
 /*Modal for games*/
 #psTitle {
   padding: 0.8rem 0 1.1rem;
@@ -53,6 +55,10 @@ background: rgba(0, 0, 0, .6);
    background-color: inherit;
 }
 
+#imgSize {
+  width: 475px;
+  height: 267px;
+}
 
 /*Game Details*/
 .psDetails{
