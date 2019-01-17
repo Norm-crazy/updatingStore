@@ -1,3 +1,4 @@
+/*PS Modal */
 #pscontent {
     background-color: #002055;
     background-image: radial-gradient(ellipse 50% 70% at 50% 0, #002c74 20%, #001536);
@@ -15,7 +16,7 @@ height: 50px;
   background-color: black;
 }
 
-.container-fluid{
+#psContainer {
   color: white;
 flex: 1;
 width: 95%;
@@ -27,19 +28,104 @@ background: rgba(0, 0, 0, .6);
   background-color: #002055;
   background-image: radial-gradient(ellipse 50% 70% at 50% 0, #002c74 20%, #001536);
   padding: inherit;
+  padding-bottom: 15px;
 }
+
 #mgsthumbnail {
   height: 160px;
   width: 172px;
 }
 
-/*Modal for games*/
 #psTitle {
   padding: 0.8rem 0 1.1rem;
   font-weight: 200;
   letter-spacing: .4em;
   margin: auto;
 }
+
+.psDetails{
+  padding: 15px;
+}
+
+/* Xbox Modal */
+#xboxContent {
+  padding: 20px;
+  border-radius: 2px;
+  background: #fff;
+  -ms-grid-columns: auto minmax(0, 1fr);
+  -ms-grid-rows: auto auto auto auto 1fr auto;
+  grid-template-columns: min-content minmax(0, 1fr);
+  grid-template-rows: auto auto auto auto 1fr auto;
+  -webkit-box-shadow: 0 6px 23px 0 rgba(0, 0, 0, .16);
+  -moz-box-shadow: 0 6px 23px 0 rgba(0, 0, 0, .16);
+  box-shadow: 0 6px 23px 0 #212529;
+}
+
+#xboxTitle {
+  font-family: wf_heroic-condensed-pro_medium, Calibri, "Arial Narrow", "Trebuchet MS", Tahoma, Arial, sans-serif;
+  padding: 0.8rem 0 1.1rem;
+  letter-spacing: .4em;
+  text-align: center;
+}
+#xbox-Modal-header {
+  background: #fff;
+  color: black;
+}
+
+hr {
+  content: "";
+  width: 87%;
+margin-left: 17px;
+margin-top: -28px;
+display: block;
+height: 4px;
+background-position: -80px top;
+background-size: 284px 40px;
+background-repeat: no-repeat;
+background-image: linear-gradient(135deg,transparent 0,transparent 40px,rgba(62,62,62,.5) 40px,rgba(62,62,62,.5) 200px,transparent 200px);
+}
+
+hr::after {
+  content: "";
+display: block;
+height: 4px;
+background-position: -80px top;
+background-size: 284px 40px;
+background-repeat: no-repeat;
+background-image: linear-gradient(135deg,transparent 0,transparent 40px,rgba(62,62,62,.5) 40px,rgba(62,62,62,.5) 200px,transparent 200px);
+}
+
+#xboxCart {
+  background-color: #fff;
+  padding: 10px 10px;
+  border: 1px solid black;
+}
+
+#Xbox-MainSite{
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+}
+
+#Xbox-MainSit {
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+}
+
+#Xbox-MainSit a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.xboxImg {
+    width: 100px;
+}
+
+.oneImg {
+  width: 110px;
+}
+
+
+
 
 /* SlideShow*/
 .carousel-indicators li {
@@ -59,11 +145,21 @@ background: rgba(0, 0, 0, .6);
   width: 475px;
   height: 267px;
 }
-
-/*Game Details*/
-.psDetails{
-  padding: 15px;
+#XboxImg {
+  width: 453px;
+  height: 255px;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -73,6 +169,24 @@ background: rgba(0, 0, 0, .6);
   padding: 10px 10px;
   border: 1px solid white;
   width: 95%;
+}
+
+#xbox-cart-btn {
+    padding: .625rem 1.25rem;
+    margin: .3125rem 0 .75rem;
+    border: none;
+    font-size: 15px;
+    margin-left: 15px;
+    border-radius: .125rem;
+    font-size: 1.125rem;
+    cursor: pointer;
+    line-height: 1.25rem;
+    border: 2px solid transparent;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0;
+    box-shadow: 0 4px 8px 0 transparent;
+    background: #107c10;
 }
 
 .cartArea {
@@ -112,12 +226,15 @@ background: rgba(0, 0, 0, .6);
   font-weight: 200;
   letter-spacing: .1em;
   text-decoration: none;
-  color: white;
   padding-top: 15px;
 }
 
 #mainSite a {
   color: inherit;
+}
+
+#haloLogo {
+  width: 100px;
 }
 
 .steam {

@@ -84,7 +84,7 @@
         <div class="psgame">
           <input type="image" class="img-fluid psModal" data-toggle="modal" data-target=".ff8-modal-lg" src="imgs/store/Final-Fantasy-8.jpg" alt="FF8 thumbnail">
           <h5>Final Fantasy 8</h5>
-          <p id="ffPrice">Price</p>
+          <span></span><p id="ffPrice">Price</p>
           <button class="ps-btn" type="button" name="button" id="ff8Btn">Add to cart</button>
         </div>
         <!-- Large modal Content -->
@@ -98,7 +98,7 @@
                 </button>
               </div>
               <div class="modal-body ps-modal-body" id="psModal">
-                <div class="container-fluid">
+                <div class="container-fluid" id="psContainer">
                   <div class="row">
                     <div class="col-12 col-md-8">
                       <!-- carousel for images -->
@@ -137,7 +137,7 @@
                     <div class="col-6 col-md-4">
                       <div class="colbtn">
                         <div class="cartArea">
-                          <h5 id="ffPrice">Price</h5>
+                          <h5 id="ffPrice">$9.99</h5>
                           <button class="cartbtn" type="button" name="button">Add to Cart</button>
                         </div>
                       </div>
@@ -159,9 +159,6 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="modal-footer" id="psFooter">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
@@ -185,7 +182,7 @@
                 </button>
               </div>
               <div class="modal-body ps-modal-body" id="psModal">
-                <div class="container-fluid">
+                <div class="container-fluid" id="psContainer">
                   <div class="row">
                     <div class="col-12 col-md-8 colImg">
                       <!--Slide for images -->
@@ -225,7 +222,7 @@
                     <div class="col-6 col-md-4">
                       <div class="colbtn">
                         <div class="cartArea">
-                          <h5 id="ffPrice">Price</h5>
+                          <h5>$19.99</h5>
                           <button class="cartbtn" type="button" name="button">Add to Cart</button>
                         </div>
                       </div>
@@ -247,9 +244,6 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="modal-footer" id="psFooter">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
@@ -273,7 +267,7 @@
                 </button>
               </div>
               <div class="modal-body ps-modal-body" id="psModal">
-                <div class="container-fluid">
+                <div class="container-fluid" id="psContainer">
                   <div class="row">
                     <div class="col-12 col-md-8 colImg">
                       <!--Slide for images -->
@@ -312,7 +306,7 @@
                     <div class="col-6 col-md-4">
                       <div class="colbtn">
                         <div class="cartArea">
-                          <h5 id="mgs4Price">Price</h5>
+                          <h5 id="mgs4Price">$29.99</h5>
                           <button class="cartbtn" type="button" name="button">Add to Cart</button>
                         </div>
                       </div>
@@ -336,9 +330,6 @@
                   </div>
                 </div>
               </div>
-              <div class="modal-footer" id="psFooter">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
             </div>
           </div>
         </div>
@@ -353,6 +344,105 @@
       <div class="grid">
 
         <!--Halo -->
+        <div class="xboxgame">
+          <input id="haloThumbnail" type="image" class="img-fluid xboxModal" data-toggle="modal" data-target=".halo-modal-lg" src="imgs\store\Halo-store-item.png" alt="halo thumbnail">
+          <h5>Halo: Combat Evolved</h5>
+          <p>$19.99</p>
+          <button class="ps-btn" type="button" name="button" id="haloBtn">Add to cart</button>
+        </div>
+        <div class="modal fade halo-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content" id="xboxContent">
+              <div class="modal-header" id="xbox-Modal-header">
+                <h2 class="modal-title title" id="xboxTitle">Halo: Combat Evolved</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span id="close-modal" aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <hr></hr>
+              <div class="modal-body xbox-modal-body" id="xboxModal">
+                <div class="container-fluid" id="xboxContainer">
+                  <div class="row">
+                    <div class="col-12 col-md-8 colImg">
+                      <!--Slide for images -->
+                      <div id="haloimgs" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#haloimgs" data-slide-to="0" class="active"></li>
+                          <li data-target="#haloimgs" data-slide-to="1"></li>
+                          <li data-target="#haloimgs" data-slide-to="2"></li>
+                          <li data-target="#haloimgs" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="d-block w-100" src="imgs\store\details\halo\Halo-modal-bg.jpg" alt="First slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="imgs\store\details\halo\Halo1.jpg" alt="Second slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" id="XboxImg" src="imgs\store\details\halo\Halo2.jpg" alt="Third slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="imgs\store\details\halo\Halo3.jpg" alt="Fourth slide">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#haloimgs" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#haloimgs" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                    </div>
+                    <!--Cart-->
+                    <div class="col-6 col-md-4">
+                      <div class="colbtn" id="xboxCart">
+                        <div class="cartArea">
+                          <h5>$19.99</h5>
+                          <button class="cartbtn" id="xbox-cart-btn" type="button" name="button">Add to Cart</button>
+                        </div>
+                      </div>
+                      <div class="links">
+                        <p id="Xbox-MainSite">Visit the official site here: <a href="https://www.halowaypoint.com/en-us/games/halo-combat-evolved"><img id="haloLogo" src="imgs\store\haloLogo.png"> </a>
+                        </p>
+                      <p>Get the remastered edition Halo: The Master Chief Collection Digital Bundle: <a href="https://www.microsoft.com/en-US/p/halo-the-master-chief-collection-digital-bundle/brnvr30j0sj2?activetab=pivot:overviewtab"><img class="oneImg" src="imgs\store\onestore.png"></a></p>
+                      </div>
+                    </div>
+                    <!--Game info-->
+                    <div class="psDetails">
+                      <p>
+                        Halo: Combat Evolved is a military science fiction first-person shooter video game developed by Bungie and published by Microsoft Game Studios. Halo released as a launch title for Microsoft's Xbox video game console on November 15, 2001. Microsoft released versions of the game for Microsoft Windows and Mac OS X in 2003.
+                      </p>
+                      <p>
+                        Assuming the role of the elite UNSC Spartan soldier known as the Master Chief, Halo: Combat Evolved quickly drops the player into action as the starship Pillar of Autumn is attacked by humanities sworn enemy, the Covenant. Master Chief was entrusted with the ship's artificial intelligence (AI) Cortana, to prevent the Covenant from discovering the location of Earth. As the Chief, your objective is to uncover Halo’s terrible secrets and fight back against the Covenant.
+                      </p>
+                      <p>
+                        Players enjoy an experience positively packed with combat as they battle on foot and in vehicles, both inside and outdoors with a vast array of Human and Covenant weaponry. Incredible mission variety allows players to enjoy battling solo or cooperatively with a friend, or engage in intense shootouts in split-screen multiplayer combat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div class="xboxgame">
           <a href="halo.html">
             <img class="img-fluid" src="imgs\store\Halo-store-item.png" alt="halo thumbnail">
@@ -398,7 +488,6 @@
 
 
   <script src="script/script.js"></script>
-  <script src="script/modal.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
