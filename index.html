@@ -353,10 +353,10 @@
         <div class="modal fade halo-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-lg">
             <div class="modal-content" id="xboxContent">
-              <div class="modal-header" id="xbox-Modal-header">
+              <div class="modal-header xbox-Modal-header">
                 <h2 class="modal-title title" id="xboxTitle">Halo: Combat Evolved</h2>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span id="close-modal" aria-hidden="true">&times;</span>
+                  <span id="close-modal-xbox" aria-hidden="true">&times;</span>
                 </button>
               </div>
               <hr></hr>
@@ -411,7 +411,7 @@
                       </div>
                     </div>
                     <!--Game info-->
-                    <div class="psDetails">
+                    <div class="xboxDetails">
                       <p>
                         Halo: Combat Evolved is a military science fiction first-person shooter video game developed by Bungie and published by Microsoft Game Studios. Halo released as a launch title for Microsoft's Xbox video game console on November 15, 2001. Microsoft released versions of the game for Microsoft Windows and Mac OS X in 2003.
                       </p>
@@ -429,30 +429,100 @@
           </div>
         </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <!--Gears of War -->
         <div class="xboxgame">
-          <a href="halo.html">
-            <img class="img-fluid" src="imgs\store\Halo-store-item.png" alt="halo thumbnail">
-            <h5>Halo: Combat Evolved</h5>
-            <p id="haloPrice">Price</p>
-          </a>
-          <button class="box-btn" type="button" name="button" id="haloBtn">Add to cart</button>
+          <input id="gowThumbnail" type="image" class="img-fluid xboxModal" data-toggle="modal" data-target=".gears-modal-lg" src="imgs\store\gow-store-img1.jpg" alt="Gears of War thumbnail">
+          <h5>Gears of War</h5>
+          <p id="gowPrice">Price</p>
+          <button class="box-btn" type="button" name="button" id="gowBtn">Add to cart</button>
+        </div>
+        <div class="modal fade gears-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content" id="xboxContent">
+              <div class="modal-header xbox-Modal-header" id="gearHeader">
+                <h2 class="modal-title title" id="GearTitle">GEARS OF WAR</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span id="close-modal-xbox" aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body xbox-modal-body" id="xboxModal">
+                <div class="container-fluid" id="xboxContainer">
+                  <div class="row">
+                    <div class="col-12 col-md-8 colImg">
+                      <!--Slide for images -->
+                      <div id="gearsimgs" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#gearsimgs" data-slide-to="0" class="active"></li>
+                          <li data-target="#gearsimgs" data-slide-to="1"></li>
+                          <li data-target="#gearsimgs" data-slide-to="2"></li>
+                          <li data-target="#gearsimgs" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="d-block w-100" src="imgs\store\details\gears\gowMain.jpg" alt="First slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="imgs\store\details\gears\gow1.jpg" alt="Second slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="imgs\store\details\gears\gow2.jpg" alt="Third slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" id="XboxImg" src="imgs\store\details\gears\gow3.jpg" alt="Fourth slide">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#gearsimgs" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#gearsimgs" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                    </div>
+                    <!--Cart-->
+                    <div class="col-6 col-md-4">
+                      <div class="colbtn" id="xboxCart">
+                        <div class="cartArea">
+                          <h5>$19.99</h5>
+                          <button class="cartbtn" id="xbox-cart-btn" type="button" name="button">Add to Cart</button>
+                        </div>
+                      </div>
+                      <div class="links">
+                        <p id="gearsSites">Visit the official site here:
+                          <a id="gowlink" href="https://gearsofwar.com/en-us/games/gears-of-war/xbox-360"><img id="gearsLogo" src="imgs\store\gearslogo.png"></a>
+                        </p>
+                        <p>Get the remastered edition: Gears of War: Ultimate Edition -<a href="https://www.microsoft.com/en-us/p/gears-of-war-ultimate-edition/bqt21vxfs52f?activetab=pivot:overviewtab"><img class="oneImg" src="imgs\store\onestore.png"></a></p>
+                      </div>
+                    </div>
+                    <!--Game info-->
+                    <div class="xboxDetails">
+                      <p>
+                        Gears of War is a video game franchise created by Epic Games, and owned and published by Microsoft Studios. The first installment, titled Gears of War, was released on November 7, 2006, for the Xbox 360.
+                      </p>
+                      <p>
+                        Players follow the protagonist Marcus Fenix, a soldier in the Coalition of Ordered Governments tasked to lead a last-ditch effort to destroy the Locust Horde and save humanity. Gears of War is set 14 years after the Locust emerged and attacked Sera's human population. Marcus seeks personal redemption as he leads his fire team against an onslaught of merciless warrior fiends.
+                      </p>
+                      <p>
+                        In this third-person tactical action/horror game, gamers immerse themselves in an experience so intensely emotional and gut-wrenching that playing will be like controlling a blockbuster action movie. Players can play Co-op Campaign, play as Marcus Fenix, or recruit a friend to play Dominic Santiago and complete campaign mode cooperatively – online or off.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!--Gears of War -->
+
+
+
+
+
+
+
+
         <div class="gears xboxgame">
           <a href="gear.html">
             <img id="gearImg" class="img-fluid" src="imgs\store\gow-store-img1.jpg" alt="Gears of War thumbnail">

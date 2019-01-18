@@ -48,6 +48,10 @@ background: rgba(0, 0, 0, .6);
 }
 
 /* Xbox Modal */
+#close-modal-xbox{
+color: black;
+}
+
 #xboxContent {
   padding: 20px;
   border-radius: 2px;
@@ -67,7 +71,7 @@ background: rgba(0, 0, 0, .6);
   letter-spacing: .4em;
   text-align: center;
 }
-#xbox-Modal-header {
+.xbox-Modal-header {
   background: #fff;
   color: black;
 }
@@ -125,6 +129,29 @@ background-image: linear-gradient(135deg,transparent 0,transparent 40px,rgba(62,
 }
 
 
+.xboxDetails {
+  font-size: 15px;
+  font-family: "Arial Narrow", "Trebuchet MS", Tahoma, Arial, sans-serif;
+}
+
+#gearHeader {
+  font-family: Arial, sans-serif;
+font-size: 0.85714em;
+border-bottom: 2px solid #900909;
+}
+
+#gearTitle {
+  font-family: Arial, "Trebuchet MS", Tahoma, Arial, sans-serif;
+}
+
+#gearsLogo {
+  width: 120px;
+}
+
+#gearsSites {
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+}
 
 
 /* SlideShow*/
