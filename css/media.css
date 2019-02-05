@@ -1,25 +1,28 @@
 /* Main Page */
 @media screen and (min-width:500px) and (max-width:767px) {
-    .grid {
-      margin-left: 155px;
-    }
+  .grid {
+    margin-left: 155px;
+  }
 }
 
 @media screen and (min-width:140px) and (max-width:499px) {
-    .grid {
-      margin: auto;
-      display: table;
-      width: 50%;
-    }
-    ..display-4 {
-      width: 15px;
-    }
-    .ps-banner, .xbox-banner {
-      width: 65%;
-    }
-    .ps-logo, .xbox-logo {
-      width: 70%;
-    }
+  .grid {
+    margin: auto;
+    display: table;
+    width: 50%;
+  }
+
+  ..display-4 {
+    width: 15px;
+  }
+
+  .ps-banner, .xbox-banner {
+    width: 65%;
+  }
+
+  .ps-logo, .xbox-logo {
+    width: 70%;
+  }
 }
 
 /*PS Games*/

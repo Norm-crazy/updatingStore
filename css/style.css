@@ -16,8 +16,9 @@ header hr {
   height: 1px;
   background-color: white;
 }
+
 /* Shopping Cart */
-.cartHeader{
+.cartHeader {
   color: white;
   text-align: center;
   text-shadow: 2px 5px black;
@@ -29,11 +30,11 @@ header hr {
   border: 1px solid black;
   width: 377px;
   left: -136px;
-  background: -webkit-linear-gradient(45deg, #307af5 0%,#3a3a3a 50%,#011940 50%,#011940 50%,#3a3a3a 50%,#c2c2c2 100%);
-  background: linear-gradient(45deg, #307af5 0%,#3a3a3a 50%,#011940 50%,#011940 50%,#3a3a3a 50%,#c2c2c2 100%);
+  background: -webkit-linear-gradient(45deg, #307af5 0%, #3a3a3a 50%, #011940 50%, #011940 50%, #3a3a3a 50%, #c2c2c2 100%);
+  background: linear-gradient(45deg, #307af5 0%, #3a3a3a 50%, #011940 50%, #011940 50%, #3a3a3a 50%, #c2c2c2 100%);
 }
 
-.cart-body{
+.cart-body {
   background-color: white;
 }
 
@@ -42,6 +43,18 @@ header hr {
   display: block;
   margin-top: 5px;
 }
+
+.itemMess{
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border: 1px solid white;
+  position: fixed;
+  right: 0;
+  display: none;
+  z-index: 5;
+}
+
 /*Into and banner image */
 .intro {
   margin: auto;
@@ -137,7 +150,7 @@ a:link, a:focus, a:hover, a:active, a:visited {
 }
 
 input:focus {
-    outline:none;
+  outline: none;
 }
 
 .psgame {

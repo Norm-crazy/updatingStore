@@ -18,7 +18,7 @@
   <!-- Nav -->
   <header class="header" id="top">
     <h3 class="header-title">Demo store for games</h3>
-    <hr>
+    <hr />
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="index.html">Games<span class="sr-only">(current)</span></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +47,7 @@
                   <div class="row">
                     <div class="col">
                       <span class="cart-heading">Items:</span>
-                      <br>
+                      <br />
                       <p class="cart-items" id="cart-input-item-ff8"></p>
                       <p class="cart-items" id="cart-input-item-mgs"></p>
                       <p class="cart-items" id="cart-input-item-mgs4"></p>
@@ -57,9 +57,9 @@
                     </div>
                     <div class="col cartPrice">
                       <span class="cart-heading" id="cart-sub">Subtotal:</span><span id="cart-input-sub"></span>
-                      <br>
+                      <br />
                       <span class="cart-heading" id="cart-tax">Tax:</span><span id="cart-input-tax"></span>
-                      <br>
+                      <br />
                       <span class="cart-heading" id="cart-total">Total:</span><span id="cart-input-total"></span>
                     </div>
                   </div>
@@ -91,12 +91,12 @@
             <form class="nameEmail" action="index.html" method="post">
               <div class="form-group" id="nameForm">
                 <label>Name: </label>
-                <input type="text" id="name" name="name" required="">
+                <input type="text" id="name" name="name" required="" />
               </div>
-              <br>
+              <br />
               <div class="form-group" id="emailForm">
                 <label>Email: </label>
-                <input type="email" id="email" required />
+                <input type="email" id="email" name="email" required="" />
               </div>
             </form>
             <!-- Card info / details are not gathered -->
@@ -118,30 +118,30 @@
                     <div class="form-group CVV">
                       <label for="cvv">CVV: </label>
                       <input type="text" class="form-control" id="cvv">
-                    <div class="form-group" id="expDate">
-                      <label>Expiration Date</label>
-                      <select>
-                        <option value="01">January</option>
-                        <option value="02">February </option>
-                        <option value="03">March</option>
-                        <option value="04">April</option>
-                        <option value="05">May</option>
-                        <option value="06">June</option>
-                        <option value="07">July</option>
-                        <option value="08">August</option>
-                        <option value="09">September</option>
-                        <option value="10">October</option>
-                        <option value="11">November</option>
-                        <option value="12">December</option>
-                      </select>
-                      <select>
-                        <option value="19"> 2019</option>
-                        <option value="20"> 2020</option>
-                        <option value="21"> 2021</option>
-                        <option value="22"> 2022</option>
-                        <option value="23"> 2023</option>
-                      </select>
-                    </div>
+                      <div class="form-group" id="expDate">
+                        <label>Expiration Date</label>
+                        <select>
+                          <option value="01">January</option>
+                          <option value="02">February </option>
+                          <option value="03">March</option>
+                          <option value="04">April</option>
+                          <option value="05">May</option>
+                          <option value="06">June</option>
+                          <option value="07">July</option>
+                          <option value="08">August</option>
+                          <option value="09">September</option>
+                          <option value="10">October</option>
+                          <option value="11">November</option>
+                          <option value="12">December</option>
+                        </select>
+                        <select>
+                          <option value="19"> 2019</option>
+                          <option value="20"> 2020</option>
+                          <option value="21"> 2021</option>
+                          <option value="22"> 2022</option>
+                          <option value="23"> 2023</option>
+                        </select>
+                      </div>
                     </div>
                   </div>
                   <div class="form-group" id="pay-now">
@@ -155,17 +155,10 @@
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
-  <!-- Modal stares & info -->
+  <div class="itemMess">
+    <p>Item added to cart</p>
+  </div>
+  <!-- Info Modal -->
   <div class="intro">
     <div class="jumbotron">
       <h1 class="display-4">Welcome to my store.</h1>
@@ -199,7 +192,7 @@
     <!--PlayStation-->
     <div class="psarea">
       <div class="ps-banner" id="ps">
-        <img class="ps-logo" src="imgs/store/pslogo1.png" alt="PS Logo">
+        <img class="ps-logo" src="imgs/store/pslogo1.png" alt="PS Logo" />
       </div>
       <div class="grid">
         <!-- Final Fantasy 8 Modal  -->
@@ -207,8 +200,8 @@
           <input type="image" class="img-fluid psModal" data-toggle="modal" data-target=".ff8-modal-lg" src="imgs/store/Final-Fantasy-8.jpg" alt="FF8 thumbnail">
           <h5>Final Fantasy 8</h5>
           <span></span>
-          <p id="ffPrice">Price</p>
-          <button class="ps-btn" type="button" name="button" id="ff8Btn">Add to cart</button>
+          <p class="ffPrice">Price</p>
+          <button class="ps-btn ffAdd" type="button" name="button" id="ff8Btn">Add to cart</button>
         </div>
         <!-- Large modal Content -->
         <div class="modal fade ff8-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -234,16 +227,16 @@
                         </ol>
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img class="d-block w-100" src="imgs\store\details\FF8\slidemain.jpg" alt="First slide">
+                            <img class="d-block w-100" src="imgs\store\details\FF8\slidemain.jpg" alt="First slide" />
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="imgs\store\details\FF8\slide.png" alt="Second slide">
+                            <img class="d-block w-100" src="imgs\store\details\FF8\slide.png" alt="Second slide" />
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="imgs\store\details\FF8\slide1.jpg" alt="Third slide">
+                            <img class="d-block w-100" src="imgs\store\details\FF8\slide1.jpg" alt="Third slide" />
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="imgs\store\details\FF8\slide2.jpg" alt="Fourth slide">
+                            <img class="d-block w-100" src="imgs\store\details\FF8\slide2.jpg" alt="Fourth slide" />
                           </div>
                         </div>
                         <a class="carousel-control-prev" href="#ff8Imgs" role="button" data-slide="prev">
@@ -260,15 +253,15 @@
                     <div class="col-6 col-md-4">
                       <div class="colbtn">
                         <div class="cartArea">
-                          <h5 id="ffPrice">$9.99</h5>
-                          <button class="cartbtn" type="button" name="button">Add to Cart</button>
+                          <h5 class="ffPrice">price</h5>
+                          <button class="ps-btn ffAdd" type="button" name="button">Add to cart</button>
                         </div>
                       </div>
                       <div class="links">
                         <p id="mainSite">Visit the official site here:
                           <a href="https://ffviiipc.square-enix-games.com/us">Final Fantasy 8</a>
                         </p>
-                        <p class="steam">Purchase on Steam:<a href="https://store.steampowered.com/app/39150/FINAL_FANTASY_VIII/"><img class="steamImg" src="imgs\store\steam.png"></a></p>
+                        <p class="steam">Purchase on Steam:<a href="https://store.steampowered.com/app/39150/FINAL_FANTASY_VIII/"><img class="steamImg" src="imgs\store\steam.png" /></a></p>
                         <p>Purchase this PS one game and play it on the PS3 and PSP!: <a href="https://store.playstation.com/en-us/product/UP9000-NPUJ00892_00-0000000000000001"><img class="psStore" src="imgs\store\playstation-store.png"></a></p>
                       </div>
                     </div>
@@ -292,7 +285,7 @@
           <input type="image" class="img-fluid psModal" data-toggle="modal" data-target=".mgs-modal-lg" src="imgs\store\metal-gear-solid-game.png" alt="MGS thumbnail">
           <h5>Metal Gear Solid</h5>
           <p id="mgPrice">Price</p>
-          <button class="ps-btn" type="button" name="button" id="mgsBtn">Add to cart</button>
+          <button class="ps-btn mgAdd" type="button" name="button" id="mgsBtn">Add to cart</button>
         </div>
         <!-- Large modal Content -->
         <div class="modal fade mgs-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -318,16 +311,16 @@
                         </ol>
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img class="d-block w-100" id="imgSize" src="imgs\store\details\mgs\mgs-modal.jpg" alt="First slide">
+                            <img class="d-block w-100" id="imgSize" src="imgs\store\details\mgs\mgs-modal.jpg" alt="First slide" />
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" id="imgSize" src="imgs\store\details\mgs\mgs1.jpg" alt="Second slide">
+                            <img class="d-block w-100" id="imgSize" src="imgs\store\details\mgs\mgs1.jpg" alt="Second slide" />
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="imgs\store\details\mgs\mgs2.jpg" alt="Third slide">
+                            <img class="d-block w-100" src="imgs\store\details\mgs\mgs2.jpg" alt="Third slide" />
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="imgs\store\details\mgs\mgs3.jpg" alt="Fourth slide">
+                            <img class="d-block w-100" src="imgs\store\details\mgs\mgs3.jpg" alt="Fourth slide" />
                           </div>
                         </div>
                         <a class="carousel-control-prev" href="#mgsimgs" role="button" data-slide="prev">
@@ -346,14 +339,14 @@
                       <div class="colbtn">
                         <div class="cartArea">
                           <h5>$19.99</h5>
-                          <button class="cartbtn" type="button" name="button">Add to Cart</button>
+                          <button class="cartbtn mgAdd" type="button" name="button" id="mgsBtn1">Add to Cart</button>
                         </div>
                       </div>
                       <div class="links">
                         <p id="mainSite">Visit the official site here:
                           <a href="https://www.konami.com/games/eu/en/products/mgs/">Metal Gear Solid</a>
                         </p>
-                        <img class="mgsnotonline" src="imgs\store\MGS-Codec1.jpg">
+                        <img class="mgsnotonline" src="imgs\store\MGS-Codec1.jpg" />
                       </div>
                     </div>
                     <!--Game info-->
@@ -377,7 +370,7 @@
           <input id="mgsthumbnail" type="image" class="img-fluid psModal" data-toggle="modal" data-target=".mgs4-modal-lg" src="imgs\store\MGS4.jpg" alt="MGS thumbnail">
           <h5>Metal Gear Solid 4</h5>
           <p id="mgs4Price">Price</p>
-          <button class="ps-btn" type="button" name="button" id="mgs4Btn">Add to cart</button>
+          <button class="ps-btn mg4Add" type="button" name="button" id="mgs4Btn">Add to cart</button>
         </div>
         <!-- Large modal Content -->
         <div class="modal fade mgs4-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -403,16 +396,16 @@
                         </ol>
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img class="d-block w-100" src="imgs\store\details\mgs4\MGS4-main.jpg" alt="First slide">
+                            <img class="d-block w-100" src="imgs\store\details\mgs4\MGS4-main.jpg" alt="First slide" />
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="imgs\store\details\mgs4\mgs4-1.jpg" alt="Second slide">
+                            <img class="d-block w-100" src="imgs\store\details\mgs4\mgs4-1.jpg" alt="Second slide" />
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="imgs\store\details\mgs4\mgs4-2.gif" alt="Third slide">
+                            <img class="d-block w-100" src="imgs\store\details\mgs4\mgs4-2.gif" alt="Third slide" />
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" id="imgSize" src="imgs\store\details\mgs4\MGS4-3.jpg" alt="Fourth slide">
+                            <img class="d-block w-100" id="imgSize" src="imgs\store\details\mgs4\MGS4-3.jpg" alt="Fourth slide" />
                           </div>
                         </div>
                         <a class="carousel-control-prev" href="#mgs4imgs" role="button" data-slide="prev">
@@ -430,14 +423,14 @@
                       <div class="colbtn">
                         <div class="cartArea">
                           <h5 id="mgs4Price">$29.99</h5>
-                          <button class="cartbtn" type="button" name="button">Add to Cart</button>
+                          <button class="cartbtn mg4Add" type="button" name="button">Add to Cart</button>
                         </div>
                       </div>
                       <div class="links">
                         <p id="mainSite">Visit the official site here:
                           <a href="https://www.konami.com/games/eu/en/products/mgs4/">Metal Gear Solid 4: Guns of the Patriots</a>
                         </p>
-                        <p>Purchase on PlayStation Store for PS3:<a href="https://store.playstation.com/en-us/product/UP0101-NPUB31633_00-MGS4MAINGAME0000"><img class="psStore" src="imgs\store\playstation-store.png"></a></p>
+                        <p>Purchase on PlayStation Store for PS3:<a href="https://store.playstation.com/en-us/product/UP0101-NPUB31633_00-MGS4MAINGAME0000"><img class="psStore" src="imgs\store\playstation-store.png" /></a></p>
                       </div>
                     </div>
                     <!--Game info-->
@@ -462,7 +455,7 @@
     <!--Xbox area -->
     <div class="xboxArea">
       <div class="xbox-banner" id="box">
-        <img class="xbox-logo" src="imgs\store\xbox-store-logo.png" alt="xbox logo">
+        <img class="xbox-logo" src="imgs\store\xbox-store-logo.png" alt="xbox logo" />
       </div>
       <div class="grid">
 
@@ -471,7 +464,7 @@
           <input id="haloThumbnail" type="image" class="img-fluid xboxModal" data-toggle="modal" data-target=".halo-modal-lg" src="imgs\store\Halo-store-item.png" alt="halo thumbnail">
           <h5>Halo</h5>
           <p>$19.99</p>
-          <button class="box-btn" type="button" name="button" id="haloBtn">Add to cart</button>
+          <button class="box-btn haloAdd" type="button" name="button" id="haloBtn">Add to cart</button>
         </div>
         <div class="modal fade halo-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-lg">
@@ -498,16 +491,16 @@
                         </ol>
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img class="d-block w-100" src="imgs\store\details\halo\Halo-modal-bg.jpg" alt="First slide">
+                            <img class="d-block w-100" src="imgs\store\details\halo\Halo-modal-bg.jpg" alt="First slide" />
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="imgs\store\details\halo\Halo1.jpg" alt="Second slide">
+                            <img class="d-block w-100" src="imgs\store\details\halo\Halo1.jpg" alt="Second slide" />
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" id="XboxImg" src="imgs\store\details\halo\Halo2.jpg" alt="Third slide">
+                            <img class="d-block w-100" id="XboxImg" src="imgs\store\details\halo\Halo2.jpg" alt="Third slide" />
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="imgs\store\details\halo\Halo3.jpg" alt="Fourth slide">
+                            <img class="d-block w-100" src="imgs\store\details\halo\Halo3.jpg" alt="Fourth slide" />
                           </div>
                         </div>
                         <a class="carousel-control-prev" href="#haloimgs" role="button" data-slide="prev">
@@ -525,11 +518,11 @@
                       <div class="colbtn" id="xboxCart">
                         <div class="cartArea">
                           <h5>$19.99</h5>
-                          <button class="cartbtn" id="xbox-cart-btn" type="button" name="button">Add to Cart</button>
+                          <button class="cartbtn haloAdd" id="xbox-cart-btn" type="button" name="button">Add to Cart</button>
                         </div>
                       </div>
                       <div class="links">
-                        <p id="Xbox-MainSite">Visit the official site here: <a href="https://www.halowaypoint.com/en-us/games/halo-combat-evolved"><img id="haloLogo" src="imgs\store\haloLogo.png"> </a>
+                        <p id="Xbox-MainSite">Visit the official site here: <a href="https://www.halowaypoint.com/en-us/games/halo-combat-evolved"><img id="haloLogo" src="imgs\store\haloLogo.png" /> </a>
                         </p>
                         <p>Get the remastered edition Halo: The Master Chief Collection Digital Bundle: <a href="https://www.microsoft.com/en-US/p/halo-the-master-chief-collection-digital-bundle/brnvr30j0sj2?activetab=pivot:overviewtab"><img class="oneImg"
                               src="imgs\store\onestore.png"></a></p>
@@ -563,7 +556,7 @@
           <input id="gearImg" type="image" class="img-fluid xboxModal" data-toggle="modal" data-target=".gears-modal-lg" src="imgs\store\gow-store-img1.jpg" alt="Gears of War thumbnail">
           <h5>Gears of War</h5>
           <p id="gowPrice">Price</p>
-          <button class="box-btn" type="button" name="button" id="gowBtn">Add to cart</button>
+          <button class="box-btn gowAdd" type="button" name="button" id="gowBtn">Add to cart</button>
         </div>
         <div class="modal fade gears-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-lg">
@@ -588,16 +581,16 @@
                         </ol>
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img class="d-block w-100" src="imgs\store\details\gears\gowMain.jpg" alt="First slide">
+                            <img class="d-block w-100" src="imgs\store\details\gears\gowMain.jpg" alt="First slide" />
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="imgs\store\details\gears\gow1.jpg" alt="Second slide">
+                            <img class="d-block w-100" src="imgs\store\details\gears\gow1.jpg" alt="Second slide" />
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="imgs\store\details\gears\gow2.jpg" alt="Third slide">
+                            <img class="d-block w-100" src="imgs\store\details\gears\gow2.jpg" alt="Third slide" />
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" id="XboxImg" src="imgs\store\details\gears\gow3.jpg" alt="Fourth slide">
+                            <img class="d-block w-100" id="XboxImg" src="imgs\store\details\gears\gow3.jpg" alt="Fourth slide" />
                           </div>
                         </div>
                         <a class="carousel-control-prev" href="#gearsimgs" role="button" data-slide="prev">
@@ -615,7 +608,7 @@
                       <div class="colbtn" id="xboxCart">
                         <div class="cartArea">
                           <h5>$19.99</h5>
-                          <button class="cartbtn" id="xbox-cart-btn" type="button" name="button">Add to Cart</button>
+                          <button class="cartbtn gowAdd" id="xbox-cart-btn" type="button" name="button">Add to Cart</button>
                         </div>
                       </div>
                       <div class="links">
@@ -646,13 +639,12 @@
           </div>
         </div>
 
-
         <!--Dead Rising 3 -->
         <div class="xboxgame">
           <input id="risingImg" type="image" class="img-fluid xboxModal" data-toggle="modal" data-target=".rising-modal-lg" src="imgs\store\dead.png" alt="Dear Rising 3 thumbnail">
           <h5>Dead Rising 3</h5>
           <p id="drPrice">Price</p>
-          <button class="box-btn" type="button" name="button" id="drBtn">Add to cart</button>
+          <button class="box-btn drAdd" type="button" name="button" id="drBtn">Add to cart</button>
         </div>
         <div class="modal fade rising-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-lg">
@@ -677,16 +669,16 @@
                         </ol>
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img class="d-block w-100" src="imgs\store\details\Dead Rising\deadrising-main.jpg" alt="First slide">
+                            <img class="d-block w-100" src="imgs\store\details\Dead Rising\deadrising-main.jpg" alt="First slide" />
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="imgs\store\details\Dead Rising\dead01.jpg" alt="Second slide">
+                            <img class="d-block w-100" src="imgs\store\details\Dead Rising\dead01.jpg" alt="Second slide" />
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="imgs\store\details\Dead Rising\dead02.jpg" alt="Third slide">
+                            <img class="d-block w-100" src="imgs\store\details\Dead Rising\dead02.jpg" alt="Third slide" />
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" id="" src="imgs\store\details\Dead Rising\dead03.jpg" alt="Fourth slide">
+                            <img class="d-block w-100" id="" src="imgs\store\details\Dead Rising\dead03.jpg" alt="Fourth slide" />
                           </div>
                         </div>
                         <a class="carousel-control-prev" href="#risingimgs" role="button" data-slide="prev">
@@ -704,7 +696,7 @@
                       <div class="colbtn" id="xboxCart">
                         <div class="cartArea">
                           <h5>$29.99</h5>
-                          <button class="cartbtn" id="xbox-cart-btn" type="button" name="button">Add to Cart</button>
+                          <button class="cartbtn drAdd" id="xbox-cart-btn" type="button" name="button">Add to Cart</button>
                         </div>
                       </div>
                       <div class="links">
