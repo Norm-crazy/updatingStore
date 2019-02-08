@@ -38,6 +38,7 @@ $(psCartBtn).click(function(){
   counter++;
   $("#cartNum").text(counter);
   $(".itemMess").show().delay(2000).fadeOut();
+  $("#addMessage").show().delay(2000).fadeOut();
 });
 
 function shoppingCart (){

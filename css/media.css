@@ -25,9 +25,26 @@
   }
 }
 
+@media screen and (min-width:140px) and (max-width:418px) {
+  #cartDrop {
+    width: 100%;
+  }
+}
 /*PS Games*/
-@media screen and (min-width:310px) and (max-width:991px) {
-  .colbtn {
-    width: 17rem;
+@media screen and (min-width:210px) and (max-width:991px) {
+  #mediaMd-sm-img, #mediaMd-sm-chck  {
+    display: contents;
+  }
+  #modalMediacar {
+    width: 94%;
+    margin-left: 15px;
+  }
+#cart {
+    width: 50%;
+    margin: auto;
+    margin-top: 15px;
+  }
+  .links {
+    margin: 0 27px;
   }
 }

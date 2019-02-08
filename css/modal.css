@@ -87,6 +87,15 @@
   padding: 15px;
 }
 
+#psmodalAdd {
+  display: block;
+  margin: auto;
+}
+#addMessage {
+  text-align: center;
+  display: none;
+  margin-top: 5px;
+}
 /* Xbox Modal */
 #close-modal-xbox {
   color: black;
@@ -219,6 +228,11 @@
 }
 
 #imgSize {
+  width: 475px;
+  height: 250.14px;
+}
+
+#imgSizeMg4{
   width: 475px;
   height: 267px;
 }
