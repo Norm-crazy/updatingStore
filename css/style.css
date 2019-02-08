@@ -44,7 +44,7 @@ header hr {
   margin-top: 5px;
 }
 
-.itemMess{
+.itemMess {
   background-color: blue;
   color: white;
   padding: 10px;
@@ -277,4 +277,10 @@ footer a {
 
 #portfolio:hover {
   text-decoration: underline white;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

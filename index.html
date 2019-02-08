@@ -87,73 +87,73 @@
         </div>
         <div class="modal-body">
           <div class="container">
+            <div class="alert">Your Order has been submitted!
+            </div>
             <p>Thank you, for using my demo store. This checkout demo request for the following information: Name, Email, and to enter a fake credit card details.</p>
-            <form class="nameEmail" action="index.html" method="post">
-              <div class="form-group" id="nameForm">
-                <label>Name: </label>
-                <input type="text" id="name" name="name" required="" />
-              </div>
-              <br />
-              <div class="form-group" id="emailForm">
-                <label>Email: </label>
-                <input type="email" id="email" name="email" required="" />
-              </div>
-            </form>
+            <div class="form-check form-check-inline">
+              <form id="checkoutForm" action="index.html" method="post">
+                <div class="form-check form-check-inline">
+                  <label>Name:</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-check form-check-inline emailForm">
+                  <label>Email: </label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+            </div>
             <!-- Card info / details are not gathered -->
             <div class="creditCardForm">
               <div class="heading">
                 <h3>Confirm Order</h3>
               </div>
               <div class="payment">
-                <form>
-                  <div class="form-group owner">
-                    <label for="owner">Card holder</label>
-                    <input type="text" class="form-control" id="owner">
-                  </div>
-                  <div class="form-group" id="card-number-field">
-                    <label for="cardNumber">Card Number</label>
-                    <input type="text" class="form-control" id="cardNumber">
-                  </div>
-                  <div class="cvvExp">
-                    <div class="form-group CVV">
-                      <label for="cvv">CVV: </label>
-                      <input type="text" class="form-control" id="cvv">
-                      <div class="form-group" id="expDate">
-                        <label>Expiration Date</label>
-                        <select>
-                          <option value="01">January</option>
-                          <option value="02">February </option>
-                          <option value="03">March</option>
-                          <option value="04">April</option>
-                          <option value="05">May</option>
-                          <option value="06">June</option>
-                          <option value="07">July</option>
-                          <option value="08">August</option>
-                          <option value="09">September</option>
-                          <option value="10">October</option>
-                          <option value="11">November</option>
-                          <option value="12">December</option>
-                        </select>
-                        <select>
-                          <option value="19"> 2019</option>
-                          <option value="20"> 2020</option>
-                          <option value="21"> 2021</option>
-                          <option value="22"> 2022</option>
-                          <option value="23"> 2023</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group" id="pay-now">
-                    <button type="submit" class="btn btn-default" id="confirm-purchase">Confirm</button>
-                  </div>
-                </form>
+                <div class="form-group owner form-check form-check-inline">
+                  <label for="owner">Card holder: </label>
+                  <input id="ownerName" type="text" class="form-control" id="owner" required>
+                </div>
+                <div class="form-group form-check form-check-inline" id="card-number-field">
+                  <label for="cardNumber">Card Number: </label>
+                  <input type="number" class="form-control" id="cardNumber" required>
+                </div>
               </div>
+              <div class="cvvExp">
+                <div class="form-group CVV">
+                  <label for="cvv">CVV: </label>
+                  <input type="text number" class="form-control" id="cvv" maxlength="3" required>
+                  <div class="form-group" id="expDate">
+                    <label>Expiration Date</label>
+                    <select>
+                      <option value="01">January</option>
+                      <option value="02">February </option>
+                      <option value="03">March</option>
+                      <option value="04">April</option>
+                      <option value="05">May</option>
+                      <option value="06">June</option>
+                      <option value="07">July</option>
+                      <option value="08">August</option>
+                      <option value="09">September</option>
+                      <option value="10">October</option>
+                      <option value="11">November</option>
+                      <option value="12">December</option>
+                    </select>
+                    <select>
+                      <option value="19"> 2019</option>
+                      <option value="20"> 2020</option>
+                      <option value="21"> 2021</option>
+                      <option value="22"> 2022</option>
+                      <option value="23"> 2023</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-default" id="submitOrder">Confirm</button>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
   <div class="itemMess">
     <p>Item added to cart</p>
@@ -255,7 +255,7 @@
                         <div class="cartArea">
                           <h5 class="ffPrice">price</h5>
                           <button class="ps-btn ffAdd" type="button" name="button" id="psmodalAdd">Add to cart</button>
-                          <p id="addMessage">Item added to Cart</p>
+                          <p class="addMessage">Item added to Cart</p>
                         </div>
                       </div>
                       <div class="links">
@@ -312,10 +312,10 @@
                         </ol>
                         <div class="carousel-inner" id="modalMediacar">
                           <div class="carousel-item active">
-                            <img class="d-block w-100" id="imgSize" src="imgs\store\details\mgs\mgs-modal.jpg" alt="First slide" />
+                            <img class="d-block w-100" src="imgs\store\details\mgs\mgs-modal.jpg" alt="First slide" />
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" id="imgSize" src="imgs\store\details\mgs\mgs1.jpg" alt="Second slide" />
+                            <img class="d-block w-100" src="imgs\store\details\mgs\mgs1.jpg" alt="Second slide" />
                           </div>
                           <div class="carousel-item">
                             <img class="d-block w-100" src="imgs\store\details\mgs\mgs2.jpg" alt="Third slide" />
@@ -333,7 +333,6 @@
                           <span class="sr-only">Next</span>
                         </a>
                       </div>
-
                     </div>
                     <!--Cart-->
                     <div class="col-6 col-md-4" id="mediaMd-sm-chck">
@@ -341,7 +340,7 @@
                         <div class="cartArea">
                           <h5>$19.99</h5>
                           <button class="cartbtn mgAdd" type="button" name="button" id="psmodalAdd">Add to Cart</button>
-                          <p id="addMessage">Item added to Cart</p>
+                          <p class="addMessage">Item added to Cart</p>
                         </div>
                       </div>
                       <div class="links">
@@ -396,7 +395,7 @@
                           <li data-target="#mgs4imgs" data-slide-to="2"></li>
                           <li data-target="#mgs4imgs" data-slide-to="3"></li>
                         </ol>
-                        <div class="carousel-inner">
+                        <div class="carousel-inner" id="modalMediacar">
                           <div class="carousel-item active">
                             <img class="d-block w-100" src="imgs\store\details\mgs4\MGS4-main.jpg" alt="First slide" />
                           </div>
@@ -407,7 +406,7 @@
                             <img class="d-block w-100" src="imgs\store\details\mgs4\mgs4-2.gif" alt="Third slide" />
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" id="imgSizeMg4" src="imgs\store\details\mgs4\MGS4-3.jpg" alt="Fourth slide" />
+                            <img class="d-block w-100" src="imgs\store\details\mgs4\MGS4-3.jpg" alt="Fourth slide" />
                           </div>
                         </div>
                         <a class="carousel-control-prev" href="#mgs4imgs" role="button" data-slide="prev">
@@ -426,7 +425,7 @@
                         <div class="cartArea">
                           <h5 id="mgs4Price">$29.99</h5>
                           <button class="cartbtn mg4Add" type="button" name="button" id="psmodalAdd">Add to Cart</button>
-                          <p id="addMessage">Item added to Cart</p>
+                          <p class="addMessage">Item added to Cart</p>
                         </div>
                       </div>
                       <div class="links">
@@ -461,7 +460,6 @@
         <img class="xbox-logo" src="imgs\store\xbox-store-logo.png" alt="xbox logo" />
       </div>
       <div class="grid">
-
         <!--Halo -->
         <div class="xboxgame">
           <input id="haloThumbnail" type="image" class="img-fluid xboxModal" data-toggle="modal" data-target=".halo-modal-lg" src="imgs\store\Halo-store-item.png" alt="halo thumbnail">
@@ -483,7 +481,7 @@
               <div class="modal-body xbox-modal-body" id="xboxModal">
                 <div class="container-fluid" id="xboxContainer">
                   <div class="row">
-                    <div class="col-12 col-md-8 colImg">
+                    <div class="col-12 col-md-8 colImg" id="mediaMd-sm-img">
                       <!--Slide for images -->
                       <div id="haloimgs" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -500,7 +498,7 @@
                             <img class="d-block w-100" src="imgs\store\details\halo\Halo1.jpg" alt="Second slide" />
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" id="XboxImg" src="imgs\store\details\halo\Halo2.jpg" alt="Third slide" />
+                            <img class="d-block w-100" src="imgs\store\details\halo\Halo2.jpg" alt="Third slide" />
                           </div>
                           <div class="carousel-item">
                             <img class="d-block w-100" src="imgs\store\details\halo\Halo3.jpg" alt="Fourth slide" />
@@ -517,12 +515,12 @@
                       </div>
                     </div>
                     <!--Cart-->
-                    <div class="col-6 col-md-4">
+                    <div class="col-6 col-md-4" id="mediaMd-sm-chck">
                       <div class="colbtn" id="xboxCart">
                         <div class="cartArea">
                           <h5>$19.99</h5>
                           <button class="cartbtn haloAdd" id="xbox-cart-btn" type="button" name="button">Add to Cart</button>
-                          <p id="addMessage">Item added to Cart</p>
+                          <p class="addMessage">Item added to Cart</p>
                         </div>
                       </div>
                       <div class="links">
@@ -574,7 +572,7 @@
               <div class="modal-body xbox-modal-body" id="xboxModal">
                 <div class="container-fluid" id="xboxContainer">
                   <div class="row">
-                    <div class="col-12 col-md-8 colImg">
+                    <div class="col-12 col-md-8 colImg" id="mediaMd-sm-img">
                       <!--Slide for images -->
                       <div id="gearsimgs" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -608,11 +606,12 @@
                       </div>
                     </div>
                     <!--Cart-->
-                    <div class="col-6 col-md-4">
+                    <div class="col-6 col-md-4" id="mediaMd-sm-chck">
                       <div class="colbtn" id="xboxCart">
                         <div class="cartArea">
                           <h5>$19.99</h5>
                           <button class="cartbtn gowAdd" id="xbox-cart-btn" type="button" name="button">Add to Cart</button>
+                          <p class="addMessage">Item added to Cart</p>
                         </div>
                       </div>
                       <div class="links">
@@ -662,7 +661,7 @@
               <div class="modal-body xbox-modal-body" id="xboxModal">
                 <div class="container-fluid" id="xboxContainer">
                   <div class="row">
-                    <div class="col-12 col-md-8 colImg">
+                    <div class="col-12 col-md-8 colImg" id="mediaMd-sm-img">
                       <!--Slide for images -->
                       <div id="risingimgs" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -696,11 +695,12 @@
                       </div>
                     </div>
                     <!--Cart-->
-                    <div class="col-6 col-md-4">
+                    <div class="col-6 col-md-4" id="mediaMd-sm-chck">
                       <div class="colbtn" id="xboxCart">
                         <div class="cartArea">
                           <h5>$29.99</h5>
                           <button class="cartbtn drAdd" id="xbox-cart-btn" type="button" name="button">Add to Cart</button>
+                          <p class="addMessage">Item added to Cart</p>
                         </div>
                       </div>
                       <div class="links">
@@ -743,11 +743,10 @@
     <p>Thank you for visiting my demo store page. Feel free to check you my Portfolio: <a id="portfolio" href="https://snakevs2.github.io/Portfolio/">Snakevs2</a></p>
   </footer>
 
-
+  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
   <script src="script/script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
-
 </html>

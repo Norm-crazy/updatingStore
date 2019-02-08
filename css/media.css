@@ -30,21 +30,51 @@
     width: 100%;
   }
 }
-/*PS Games*/
-@media screen and (min-width:210px) and (max-width:991px) {
-  #mediaMd-sm-img, #mediaMd-sm-chck  {
+
+/* Games Modals & Check Out*/
+@media screen and (min-width:210px) and (max-width:991.5px) {
+  #mediaMd-sm-img, #mediaMd-sm-chck {
     display: contents;
   }
+
   #modalMediacar {
     width: 94%;
     margin-left: 15px;
   }
-#cart {
-    width: 50%;
+
+  #cart, #xboxCart {
+    width: 200px;
     margin: auto;
     margin-top: 15px;
   }
+
   .links {
     margin: 0 27px;
+  }
+
+  .carousel-control-prev {
+    margin-left: 15px;
+  }
+
+  .carousel-control-next {
+    margin-right: 15px;
+  }
+
+  /*CheckOut*/
+  .emailForm {
+    margin-top: 10px;
+  }
+
+  .emailForm label {
+    padding-right: 5px;
+  }
+
+  #confirm-purchase {
+    display: block;
+    margin: auto;
+  }
+
+  #ownerName {
+    margin-left: 25px;
   }
 }

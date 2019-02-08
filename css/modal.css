@@ -13,16 +13,21 @@
   background: linear-gradient(45deg, #307af5 0%, #3a3a3a 68%, #011940 50%, #011940 50%, #3a3a3a 50%, #c2c2c2 100%);
 }
 
-.nameEmail {
-  display: flex;
+.alert {
+  display: none;
+  text-align: center;
+  padding: 10px;
+  background: #326fd5;
+  color: white;
+  margin-bottom: 10px;
 }
 
-#emailForm {
-  margin-left: 24px;
+#name, #email {
+  margin-left: 5px;
 }
 
 #owner, #cardNumber {
-  width: 360px;
+  margin-left: 15px;
 }
 
 #cvv {
@@ -91,18 +96,19 @@
   display: block;
   margin: auto;
 }
-#addMessage {
+
+.addMessage {
   text-align: center;
   display: none;
   margin-top: 5px;
 }
+
 /* Xbox Modal */
 #close-modal-xbox {
   color: black;
 }
 
 #xboxContent {
-  padding: 20px;
   border-radius: 2px;
   background: #fff;
   -ms-grid-columns: auto minmax(0, 1fr);
@@ -227,25 +233,10 @@
   background-color: inherit;
 }
 
-#imgSize {
-  width: 475px;
-  height: 250.14px;
-}
-
-#imgSizeMg4{
-  width: 475px;
-  height: 267px;
-}
-
-#XboxImg {
-  width: 453px;
-  height: 255px;
-}
-
 /* Cart Price and Sites*/
 .colbtn {
   background-color: #262b34;
-  padding: 10px 10px;
+  padding: 5px 10px;
   border: 1px solid white;
   width: 95%;
 }
@@ -264,6 +255,8 @@
   color: #fff;
   font-weight: 600;
   letter-spacing: 0;
+  display: block;
+  margin: auto;
   box-shadow: 0 4px 8px 0 transparent;
   background: #107c10;
 }
